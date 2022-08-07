@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -49,3 +50,6 @@ TIME_ZONE = "UTC"
 STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+GOOGLE_DRIVE_SETTINGS_FILE = os.path.join(BASE_DIR, 'google/credentials/google_drive_config.yaml')
+GOOGLE_DRIVE_ORDERS_FILE_ID = '1V0-N-URwHuZ6kUYQZU-3rF39kwebkK3tBYex283VlI8'
